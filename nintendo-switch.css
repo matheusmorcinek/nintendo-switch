@@ -73,7 +73,7 @@
     justify-content: center;
 }
 
-.left-stick {
+.stick {
     position: absolute;
     width: var(--stick-size);
     height: var(--stick-size);
@@ -84,7 +84,7 @@
     box-shadow: 5px 5px 5px rgb(68 68 68 / 60%);
 }
 
-.left-stick>.top-left-quadrant {
+.stick>.top-left-quadrant {
     position: absolute;
     border-top: 7px solid #eaeaea;
     border-left: 7px solid #eaeaea;
@@ -95,7 +95,7 @@
     top: -5px;
 }
 
-.left-stick>.top-right-quadrant {
+.stick>.top-right-quadrant {
     position: absolute;
     border-top: 7px solid #eaeaea;
     border-right: 7px solid #eaeaea;
@@ -106,7 +106,7 @@
     top: -5px;
 }
 
-.left-stick>.bottom-left-quadrant {
+.stick>.bottom-left-quadrant {
     position: absolute;
     border-bottom: 7px solid #eaeaea;
     border-left: 7px solid #eaeaea;
@@ -117,7 +117,7 @@
     left: -5px;
 }
 
-.left-stick>.bottom-right-quadrant {
+.stick>.bottom-right-quadrant {
     position: absolute;
     border-bottom: 7px solid #eaeaea;
     border-right: 7px solid #eaeaea;
@@ -231,7 +231,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: 5px 5px 5px rgb(68 68 68 / 60%);
 }
 
 .capture-button {
@@ -242,9 +241,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 5px rgb(68 68 68 / 60%);
 }
 
-.inner-circle{
+.inner-circle {
     background-color: #eaeaea;
     width: 23px;
     height: 23px;
@@ -284,11 +284,12 @@
 
 /* right control */
 .right-area {
-    background-color: blue;
+    background-color: #71747b;
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
     border-top-right-radius: 65px;
     border-bottom-right-radius: 65px;
+    position: relative;
 }
 
 .plus-button-area {
@@ -296,26 +297,139 @@
     /* background-color: aliceblue; */
 }
 
+.r-button {
+    width: 122px;
+    height: 45px;
+    border-top-right-radius: 60px;
+    border-right: solid 12px #fff;
+    border-top: solid 12px #fff;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+.plus-button {
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    left: 5px;
+    top: 36px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.vertical {
+    background-color: #fff;
+    grid-row: 1 / 6;
+    grid-column: 3 / 3;
+}
+
+.horizontal {
+    background-color: #fff;
+    grid-row: 3 / 3;
+    grid-column: 1 / 6;
+}
+
 .right-letters-buttons-area {
     grid-row: 2 / 3;
-    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.right-letters-buttons {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    margin-top: -20px;
+}
+
+.right-letters-buttons>div {
+    color: #b1b1b1;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x-button {
+    border-radius: 100%;
+    background-color: #fff;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.a-button {
+    border-radius: 100%;
+    background-color: #fff;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.b-button {
+    border-radius: 100%;
+    background-color: #fff;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.y-button {
+    border-radius: 100%;
+    background-color: #fff;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
 }
 
 .right-stick-area {
     grid-row: 3 / 4;
-    background-color: yellow;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.right-stick-area>.stick {
+    top: 30px;
 }
 
 .home-button-area {
     grid-row: 4 / 5;
-    background-color: coral;
+    /* background-color: coral; */
+    display: flex;
+    align-items: center;
 }
 
-/* .right-button {
+.home-button {
+    background-color: #fff;
+    width: 27px;
+    height: 27px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: solid 2px #9e9e9e;
+    box-shadow: 5px 5px 5px rgb(68 68 68 / 60%);
     position: relative;
-    background-color: white;
-    height: 10px;
-    width: 100px;
-    z-index: 7;
-    /* align-content: flex-end; */
-/* } */
+}
+
+.roof {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 8px solid #9e9e9e;
+    top: 5px;
+}
+
+.wall {
+    top: 10px;
+    position: absolute;
+    border: solid 4px #9e9e9e;
+    height: 4px;
+    width: 4px;
+}

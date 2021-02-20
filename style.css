@@ -4,6 +4,7 @@ body {
     height: 100%;
     background: linear-gradient(to left, #00ffff, #48da40);
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-container {
