@@ -39,12 +39,12 @@
 }
 
 .l-button {
-    width: 125px;
-    height: 70px;
+    width: 122px;
+    height: 45px;
     border-top-left-radius: 60px;
+    border-left: solid 12px #fff;
+    border-top: solid 12px #fff;
     position: absolute;
-    background-color: #fff;
-    z-index: -1;
     margin-left: -5px;
     margin-top: -5px;
 }
