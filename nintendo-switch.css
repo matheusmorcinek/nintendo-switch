@@ -276,7 +276,9 @@
 }
 
 .touch-screen {
-    background-color: #2f2f2f;
+    background-image: url('./assets/link.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 90%;
     height: 88%;
     border: solid 4px #000;
