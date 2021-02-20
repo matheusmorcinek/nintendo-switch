@@ -262,8 +262,7 @@
 /* screen */
 .middle-area {
     padding: 10px 5px;
-    /* background-color: #71747b; */
-    background-color: #446bc7;
+    background-color: #71747b;
 }
 
 .screen-border {
@@ -294,7 +293,7 @@
 
 .plus-button-area {
     grid-row: 1 / 2;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
 
 .right-letters-buttons-area {
