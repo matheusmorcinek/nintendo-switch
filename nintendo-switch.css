@@ -7,7 +7,6 @@
     width: 100%;
     height: 100%;
     margin-right: auto;
-    /* background-color: gray; */
     z-index: 5;
     display: flex;
     justify-content: center;
@@ -19,6 +18,7 @@
 .nintendo-switch-inner-container {
     position: relative;
     width: 936px;
+    min-width: 936px;
     height: 409px;
     z-index: 6;
     display: grid;
