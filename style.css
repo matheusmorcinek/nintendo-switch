@@ -6,10 +6,9 @@ body {
     margin: 0;
 }
 
-.main-container{
+.main-container {
     width: 100%;
     height: 100%;
-    /* position: absolute; */
     overflow: hidden;
     position: relative;
 }
@@ -30,10 +29,10 @@ body {
     background-repeat: repeat;
     background-size: 140px 100px;
     margin-left: -200px;
-    opacity: 0.3; 
+    opacity: 0.3;
     overflow: auto;
     display: flex;
-    animation: rotation 250s infinite linear;
+    animation: rotation 100s infinite linear;
     z-index: 1;
     top: 0;
 }
@@ -44,19 +43,6 @@ body {
     }
 
     to {
-        -webkit-transform: rotate(180deg);
+        -webkit-transform: rotate(90deg);
     }
-}
-
-@keyframes attack {
-    0% {
-        top: 50px;
-        width: 100px;
-    }
-
-    100% {
-        top: 200px;
-        width: 1000px;
-    }
-
 }

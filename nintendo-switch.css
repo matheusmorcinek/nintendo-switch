@@ -3,17 +3,119 @@
     height: 100%;
     margin-right: auto;
     /* background-color: gray; */
-    z-index: 8;
+    z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nintendo-switch {
+/* Nintendo Switch Lite · Width: 208 mm (8.2 in) · Height: 91 mm (3.6 in) */
+
+.nintendo-switch-inner-container {
     position: relative;
-    width: 100px;
-    height: 100px;
-    /* margin-top: -20%; */
-    background-color: black;
-    z-index: 9;
+    width: 936px;
+    height: 409px;
+    background-color: #71747b;
+    z-index: 6;
+    display: grid;
+    /* grid-template-areas: 'left middle right'; */
+    grid-template-columns: 15% auto 15%;
 }
+
+
+/* AREAS */
+
+/* left control  */
+.left-area {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    background-color: aqua;
+    border-top-left-radius: 65px;
+    border-bottom-left-radius: 65px;
+}
+
+.minus-button-area {
+    grid-row: 1 / 2;
+    background-color: wheat;
+}
+
+.left-stick-area {
+    grid-row: 2 / 3;
+    background-color: beige;
+}
+
+.left-directional-buttons-area {
+    grid-row: 3 / 4;
+    background-color: yellow;
+}
+
+.capture-button-area {
+    grid-row: 4 / 5;
+    background-color: blueviolet;
+}
+
+.left-button {
+    position: relative;
+    background-color: white;
+    height: 10px;
+    width: 100px;
+    z-index: 7;
+}
+
+/* screen */
+.middle-area {
+    /* grid-area: 'middle'; */
+    background-color: black;
+}
+
+
+.screen {
+    position: absolute;
+    background-color: black;
+    height: 350px;
+    width: 100px;
+    top: 5%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 7;
+}
+
+/* right control */
+.right-area {
+    background-color: blue;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    border-top-right-radius: 65px;
+    border-bottom-right-radius: 65px;
+}
+
+.plus-button-area {
+    grid-row: 1 / 2;
+    background-color: aliceblue;
+}
+
+.right-letters-buttons-area {
+    grid-row: 2 / 3;
+    background-color: darkcyan;
+}
+
+.right-stick-area {
+    grid-row: 3 / 4;
+    background-color: yellow;
+}
+
+.home-button-area {
+    grid-row: 4 / 5;
+    background-color: coral;
+}
+
+/* .right-button {
+    position: relative;
+    background-color: white;
+    height: 10px;
+    width: 100px;
+    z-index: 7;
+    /* align-content: flex-end; */
+} */
