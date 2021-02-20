@@ -1,0 +1,62 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #00ffff, #48da40);
+    margin: 0;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    overflow: hidden;
+    position: relative;
+}
+
+.temp-link {
+    background-color: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.link {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-image: url('./assets/link.png');
+    background-repeat: repeat;
+    background-size: 140px 100px;
+    margin-left: -200px;
+    opacity: 0.3; 
+    overflow: auto;
+    display: flex;
+    animation: rotation 250s infinite linear;
+    z-index: 1;
+    top: 0;
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+@keyframes attack {
+    0% {
+        top: 50px;
+        width: 100px;
+    }
+
+    100% {
+        top: 200px;
+        width: 1000px;
+    }
+
+}
