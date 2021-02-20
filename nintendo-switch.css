@@ -35,6 +35,8 @@
 
 .minus-button-area {
     grid-row: 1 / 2;
+    /* display: flex; */
+    position: relative;
     /* background-color: wheat; */
 }
 
@@ -49,6 +51,15 @@
     margin-top: -5px;
 }
 
+.minus-button{
+    height: 5px;
+    width: 23px;
+    background-color: #fff;
+    position: absolute;
+    top: 46px;
+    left: auto;
+    right: 5px;
+}
 
 .left-stick-area {
     grid-row: 2 / 3;
